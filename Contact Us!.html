@@ -1,0 +1,49 @@
+<link rel="stylesheet" type="text/css" href="style.css"> 
+<h1>Contact Us!</h1>
+<div class="navbar">
+    <a href="My first website.html">Home Page</a>
+    <a href="tips.html">Tips And Tricks</a>
+    <a href="reviews.html">Product Reviews</a>
+    <a href="Baking Skills.html">Level Of Baking Skills</a>
+    <a href="Contact Us!.html">Contact Us!</a> 
+</div>
+</div>
+<div class="img1">
+<img src="/Users/JuliaCzaja/Downloads/COMMUNITY.jpeg"></a>
+</div>
+
+<!--form element-->
+    <section class="additional-info">
+        <h3>Feel Free To Contact Us!</h3>
+        <div class="navbar2">
+        <p>On this page, it will include frequently asked questions and also you can submit your email to send us 
+            a question or any recommendations. By giving us recommendations you will help us know what we need to 
+            make our page more engaging for our customers!
+        </p>
+
+    </div>
+        <form action="/action_page.php">        
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" name="fname"><br><br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="fname" name="lname"><br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    <label for="email">Enter Your Message Below:</label>
+    <textarea name="Enter Your Message Below" id="message" cols="30" rows="10"></textarea>
+    <br><br>
+    <button type="submit"> Submit</button>
+    <button type="submit" formaction="/action_page2.php"> Submit as Admin
+    </form>
+</section>
+<!--end of form-->
+
+<script>
+    function validateform() {
+        let x = document.forms[myform][fname].value;
+        if (x == "julia") {
+            alert("User name accepted");
+            return false;
+        }
+    }
+
